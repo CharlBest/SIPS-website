@@ -1,0 +1,89 @@
+/* Field set styles */
+
+fieldset	{
+	background-color:rgb(255,246,205);
+	border: 1px solid rgb(233,69,0);
+	float:left;
+	margin: 10px 0px 10px 2.5%;
+	width: 46%;
+}
+
+legend	{
+	background-color:rgb(233,69,0);
+	color:white;
+	padding:3px 0px;
+	text-indent: 5px;
+	width: 100%;
+}
+
+label		{
+	clear:left;
+	display: block;
+	float:left;
+	font-size:0.9em;
+	margin:7px 4% 7px 5px;
+	width:40%;
+}
+
+input		{
+	display: block;
+	font-size:0.9em;
+	margin:7px 0px;
+	width:50%;
+}
+
+#grade	{		
+	display: block;
+	font-size:0.9em;
+	margin:0px 0px;
+	width:50%;
+}
+
+select	{
+	display: block;
+	font-size:0.9em;
+	margin:7px 0px;
+}
+
+form label p	{
+	text-align:center;
+}
+
+input[type="submit"], input[type="reset"]	{
+	display:inline;
+	float: none;
+	height: 40px;
+	width: 200px;
+}
+
+fieldset.optionGroup	{
+	border-width:0px;
+}
+
+fieldset.optionGroup label	{
+	display:inline;
+	float:none;
+	margin:0px 3px 0px 0px;
+	width:30px;
+}
+
+fieldset.optionGroup input	{
+	display:inline;
+	float:none;
+	margin:0px 20px 0px 0px;
+	width:20px;
+}
+
+textarea	{
+	display:block;
+	font-size:0.9em;
+	height:60px;
+	margin:10px 0px;
+	width:50%;
+}
+
+#formContent	{
+	height:300px;
+	width:50%;
+	overflow:auto;
+}

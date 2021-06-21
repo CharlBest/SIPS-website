@@ -1,0 +1,729 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<link href="testcss.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<form name="application" id="application">
+			<fieldset>
+				<legend>Application</legend>
+					<label>
+					Title  
+					<select name="firstname" id="firstname"/>
+						<option value="mr" selected="selected">Mr</option>
+						<option value="mrs">Mrs</option>
+						<option value="ms">Ms</option>
+						<option value="miss">Miss</option>
+					</select>
+					</label>
+					<label>
+					First Name * 
+					<input name="firstname" id="firstname" required="required"/>
+					</label>
+					<label>
+					Last Name *
+					<input name="lastname" id="lastname" required="required"/>
+					</label>
+					<label>
+					ID *
+					<input name="id" id="id" required="required"/>
+					</label>
+					<label>
+					Parent Email *
+					<input name="parentemail" id="parentemail" type="email" required="required"/>
+					</label>
+					<label>
+					Student Email *
+					<input name="studentemail" id="studentemail" type="email" required="required"/>
+					</label>
+					<label>
+					Parent Cell Number *
+					<input name="parentnumb" id="parentnumb" placeholder="0824409199" type="tel" required="required"/>
+					</label>
+					<label>
+					Student Cell Number
+					<input name="studentnumb" id="studentnumb" placeholder="0824409199" type="tel"/>
+					</label>
+					<label>
+					Current date
+					<input name="date" id="name" type="date" placeholder="dd/mm/yyyy"/>
+					</label>
+				</fieldset>
+				
+				<fieldset>
+				<legend>Personal Information</legend>
+					<label>
+					Full Name * 
+					<input name="firstname" id="firstname" required="required"/>
+					</label>
+					<label>
+					Surname *
+					<input name="lastname" id="lastname" required="required"/>
+					</label>
+					<label>
+					Home Telephone 
+					<input name="hometelephone" id="hometelephone" type="tel"/>
+					</label>
+					<label>
+					Cellphone *
+					<input name="cellphone" id="cellphone" type="tel" required="required"/>
+					</label>
+					<label>
+					Email *
+					<input name="email" id="email" type="email" required="required"/>
+					</label>
+					<label>
+					Home Address * 
+					<input name="address" id="address" required="required"/>
+					</label>
+					<label>
+					Postal Code  
+					<input name="postalcode" id="postalcode" required="required"/>
+					</label>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Person responsible for course fees</legend>
+					<label>
+					Title  
+					<select name="firstname" id="firstname"/>
+						<option value="mr" selected="selected">Mr</option>
+						<option value="mrs">Mrs</option>
+						<option value="ms">Ms</option>
+						<option value="miss">Miss</option>
+					</select>
+					</label>
+					<label>
+					Initials * 
+					<input name="firstname" id="firstname" required="required"/>
+					</label>
+					<label>
+					Surname * 
+					<input name="firstname" id="firstname" required="required"/>
+					</label>
+					<label>
+					Employer * 
+					<input name="firstname" id="firstname" required="required"/>
+					</label>
+					<label>
+					Work telephone  
+					<input name="firstname" id="firstname"/>
+					</label>
+					<label>
+					Cellphone * 
+					<input name="firstname" id="firstname" required="required"/>
+					</label>
+					<label>
+					Email * 
+					<input name="firstname" id="firstname" type="email" required="required"/>
+					</label>
+					<label>
+					Postal Address * 
+						<label>Same as above:
+						<input type="checkbox"/>
+						</label>
+					<input name="firstname" id="firstname"/>
+					</label>
+				</fieldset>
+				
+				<fieldset>
+				<legend>Additional information</legend>
+					<label>You are a South African citizen?</label>
+						<fieldset class="optionGroup">
+							<label>Yes</label>
+							<input type="radio" name="saCitizen" id="sYes" value="yes"/>
+							<label>No</label>
+							<input type="radio" name="saCitizen" id="sNo" value="no"/>
+						</fieldset>
+					<label>You are a foreigner with a permanent stay permit?</label>
+						<fieldset class="optionGroup">
+							<label>Yes</label>
+							<input type="radio" name="foreigner" id="fYes" value="yes"/>
+							<label>No</label>
+							<input type="radio" name="foreigner" id="fNo" value="no"/>
+						</fieldset>
+					<label>You are a foreigner with a temporary stay permit?</label>
+						<fieldset class="optionGroup">
+							<label>Yes</label>
+							<input type="radio" name="temporary" id="tYes" value="yes"/>
+							<label>No</label>
+							<input type="radio" name="temporary" id="tNo" value="no"/>
+						</fieldset>
+					<label>How did you hear about SIPS?</label>
+					<textarea name="referred" id="referred"></textarea>
+					<fieldset>
+					<legend>Previous studies</legend>
+						<label>Highest grade passed:</label>
+						<fieldset class="optionGroup">
+							<label>Grade 11</label>
+							<input type="radio" name="grade" id="grade" value="gr.11"/>
+							<label>Grade 12</label>
+							<input type="radio" name="grade" id="grade" value="gr.12"/>
+						</fieldset>
+						<label>Additional work experience during high school career:</label>
+						<textarea name="experience" id="experience"></textarea>
+						<label>Name of school attended:</label>
+						<textarea name="school" id="school"></textarea>
+					</fieldset>
+					<fieldset>
+					<legend>Sport Activities</legend>
+						<label>Name two sport activities you would like to participate in in Stellenbosch?</label>
+						<textarea name="sport" id="sport"></textarea>
+					</fieldset>
+					<fieldset>
+					<legend>Medical Information</legend>
+						<label>What is your medical condition?</label>
+						<select name="medicalcondition" id="medicalcondition"/>
+							<option value="poor">Poor</option>
+							<option value="normal" selected="selected">Normal</option>
+							<option value="good">Good</option>
+						</select>
+						<label>Do you need any medical care? Specify</label>
+						<textarea name="medicalCare" id="medicalCare"></textarea>
+					</fieldset>
+				</fieldset>
+				
+				<fieldset>
+				<legend>Terms and conditions</legend>
+				<div id="formContent">
+					Sips Full-time, Cape Town and Stellenbosch Institute - First & Second Year
+					Dear Student 2014 
+					Thank you for your inquiry with regards to the Stellenbosch Institute of Photography and Multimedia 
+					Studies. We have been in existence for more than 18 years and are the most established multimedia 
+					School in the Western Cape. You are therefore assured of an Institution with high standards that 
+					delivers a remarkable service. 
+					Please find attached more information and the Registration Form. 
+					Please complete the Registration Form with due care, as incomplete forms will not be accepted. We 
+					only accept 30 full time students per institute per year. 
+					The first year commences on 4 February 2014 until 13 November 2014. 
+					Please send the following with this registration form 2014:
+					• A deposit of R 5 000 ( % of the course fee) 
+					• A copy of your identity document and passport 
+					• One identity photo 
+					• Your most recent term marks 
+					• The last page with course subject and payments with cheques attached, alternatively, proof of EFT payment 
+					arrangements
+					• If you are an international student, a copy of your study permit 
+					• A motivation of a A4 written page about why you want to study this course and what your passion is. 
+					Persons that apply first, will enjoy first preference. Should you register after 1 August 2013, you will be 
+					liable for the payment of an additional fee of R800.00 in respect of late registration. Late registrations 
+					will be considered up to 30 January 2014, without the guarantee of space availability. 
+					The requirements are grade 12, laptop computer, a digital SLR camera. No portfolio or interview 
+					required. First-come-first serve, therefore try to register soonest. You will be notified of registration in 
+					writing (except if you register later than 30 September 2013). See page 20-22 for easy summary.
+					Should you require accommodation, you must complete the rent agreement on or before 30 August 
+					2013, and return same, together with the required deposit and post dated cheques attached thereto. 
+					We are looking forward to have you with us for the next year or two. 
+					<br/>
+					2 
+					Application and Registration Form 2014 – (12.10)
+					Sips Full-time Stellenbosch or Cape Town Institute (indicate) 
+					First & Second Year 
+					Stellenbosch Institute for Photographic and Multimedia Studies - CK/2006/131819/23 
+					Title First name 
+					Surname 
+					ID. d d m m j j j j 
+					Student nr. d d m m j j j j 1 3 ( o f f i c e u s e ) 
+					Student cell no 
+					Office use 
+					Would your like to rent accommodation from us ? 
+					Double room R 3 000.00 and single R 5 000.00 
+					Yes No 
+					 If yes, kindly request and complete the rental agreement. 
+					Email parent 
+					E mail student 
+					Parent cell nr. 
+					Subjects 
+					Subjects 
+					<br/>
+					3 
+					TERMS AND CONDITIONS
+					1. GENERAL 
+					1.1 The headings of the paragraphs in this agreement are for reference purposes only and will 
+					 not be considered in the interpretation of this agreement; 
+					1.2 Unless otherwise specified, any reference to the male gender, will also include reference to the 
+					female gender and vice versa and any reference to singular, will include reference to the plural 
+					and vice versa. 
+					“Student”means _______________________________________ 
+					(ID Number: _________________________________of _______________________ 
+					“Guardian”means______________________________________ 
+					of ___________________________________________________________ 
+					“SIPS” means The Stellenbosch Institute for Photographic and Multimedia Studies (CK 
+					2006/131819/23) of duly hereinafter represented by Charl Edward Best. And “CTIPS” means 
+					The Cape Town Institute for Photographic and Multimedia Studies (CK 2006/131819/23) of duly 
+					hereinafter represented by Charl Edward Best and SIPS. 
+					“Last date of registration” means 30 September 2013 (to avoid penalties - R 800 for late 
+					registration). 
+					“Course commencement date’ means 4 February 2014. 
+					1.3The information contained in Annexure A is conditional upon SIPS concluding this agreement. 
+					Should the information appear to be incorrect and or misleading, SIPS shall have the right to 
+					terminate this agreement forthwith and shall have the right to claim whatsoever damages from the 
+					Student and or the Guardian which it may suffer as a result of the incorrect and or misleading 
+					information provided. 
+					It has been proved that our students are suitably qualified at the end of our course to enter the job 
+					market with confidence.
+					<br/>
+					4 
+					1.4. Non South African residents are required to obtain their own study permit and to furnish 
+					SIPS with a copy thereof prior to the course commencement date. 
+					2. ADMISSION REQUIREMENTS AND SELECTION 
+					2.1. Acceptance to SIPS’ courses is limited to 30 students per calendar year, but SIPS reserves the 
+					right, at its sole discretion, to accept less or more students per any calendar year. Due to the 
+					fact that SIPS receives a high number of applicants per year, all applicants shall be subject to 
+					SIPS’ selection process as set out in clauses 2.3 and 2.4 hereunder. 
+					2.2 Only students that meet SIPS’ admission requirements will be considered for the selection 
+					process. SIPS shall have the sole discretion to determine the said admission requirements, to 
+					amend same and to implement the said amended admission requirements from time to time. 
+					2.2.1 Admission Requirements: Only students with a successful completion of the registration 
+					form will be considered for any courses presented by SIPS or CTIPS.. 
+					2.3 SIPS reserves the right determine any further admission and or selection criteria from time 
+					to time at its sole discretion, to amend same and to implement same from time to time at its 
+					sole discretion. The decision to accept a student shall be final. SIPS shall be under no 
+					obligation to furnish any the reasons for its decision to accept or not to accept any applicant 
+					and no correspondence shall be entered into in this regard. Should SIPS elect to furnish 
+					reasons for its decision to accept or not to accept an applicant, it shall under no 
+					circumstances be bound by the said reasons. At the conclusion of the selection process, 
+					successful applicants shall be notified in writing. Although SIPS is not registered at any 
+					SETA or Saqa. or with the Department of Education and is not accredited, experience has 
+					shown that the portfolio and the experience that our students gain with us, enables them to 
+					successfully enter into the job market at the conclusion of our courses. 
+					2.4 Non South African residents are required to obtain their own study permit and to furnish 
+					SIPS with a copy thereof prior to the course commencement date. 
+					3 INSTRUCTION MEDIUM 
+					<br/>
+					5 
+					3.1 SIPS reserves the exclusive and absolute right to determine the language, format and 
+					contents of the course material and the medium in which the said course material will be 
+					presented. 
+					3.2 The Afrikaans language have been used at Sips. In Stellenbosch past 18 years and will be 
+					applied 70% again for this study year. The Cape Town Institute will be fully English. 
+					4 TIME TABLES, ATTENDANCES AND VACASIONS 
+					4.1 Classes are from 8h30 sharp until 17h00, with a lunch break from 13h00 to 14h00, with an 
+					official break every 45 minutes. SIPS shall have the right to refuse a student entry to a class 
+					if the student arrives at a class after the official starting time and shall be marked as absent, 
+					even if the student arrives at class for the second period. 
+					4.2 No formal lectures will be presented on Fridays, but such days may be utilized for 
+					excursions and student outings. The same rules which are applicable to official classes are 
+					applicable to excursions and outings. 
+					4.3 The attendance of all lectures are compulsory. Should a student foresee any circumstance 
+					which my prevent him or her to attend any lecture, he or she must notify SIPS of a valid and 
+					acceptable reason for his absence at least 24 prior to his or her absence. Should SIPS be 
+					of the opinion that the reason furnished, are not valid or acceptable, the said student would 
+					be marked absent and shall have the right to take appropriate steps against the student as 
+					set out hereunder. 
+					4.4 If a student is absent for medical reasons, he or she must furnish SIPS with a medical 
+					certificate from a recognised and acceptable medical practitioner. The said medical 
+					certificate should state the name, address and contact details of the medical practitioner, as 
+					well as the date on which the practitioner examined the student, the symptoms that were 
+					observed as well as the prognoses made. SIPS reserves the right to request a second 
+					medical opinion in cases where the student sites medical reasons for his or her absence. 
+					4.5 Should the student desire to be involved in any freelance or promotional work, the student 
+					may apply to SIPS to be exempted from class attendance for the freelance and or 
+					promotional work. SIPS shall have the sole discretion to grant such exemption. 
+					<br/>
+					6 
+					4.6 Should a student be absent without a valid and acceptable reason, SIPS shall have the 
+					right to take the following steps, which may not be limited to: 
+					4.6.1 Issuing the student with a verbal or written warning; and or 
+					4.6.2 Informing the students’ guardians about the absenteeism; 
+					4.6.3 Summarily suspend the student. In cases where a student’s studies have been summarily 
+					be suspended, the student shall have no claim against SIPS regarding a refund of any 
+					monies paid for the course and or other material, including any rent. The parties hereby 
+					agree, that in such circumstances, the student will forfeit any such monies paid to SIPS as 
+					compensation which SIPS may suffer. 
+					4.7 If practical, SIPS shall be closed for any official public holiday and school holidays, unless 
+					otherwise determined.
+					5 PRESCRIBED EQUIPMENT, MATERIALS AND LITERATURE
+					5.1 Some equipment, material and literature form part of the SIPS courses, e.g. in the photography 
+					course, a SLR, digital camera and lens with a tripod, laptop computer and a video camera 
+					for video production is required. Such prescribed equipment, material or literature can be 
+					provided to SIPS students at a cost as set out in Annexure C hereto, unless the student can 
+					proof to the satisfaction of SIPS that he or she is in possession of such prescribed 
+					equipment, material or literature. Under no circumstances shall any refund or compensation 
+					be made to any student in respect of any material and or services which the student did not 
+					utilise as a result of his or her absenteeism or as a result of him or her not having 
+					completed any of his or her assignments. Monies paid in respect of any material shall also 
+					not be refunded should a student for whatsoever reason not commence with the course, as 
+					the costs of the material is calculated as costs relating to the GROUP and all planned 
+					activities shall never the less still take place. 
+					5.2 SIPS have a number of equipment which students may rent on a “first come, first serve” basis.
+					<br/>
+					7 
+					5.3 SIPS have the right to refuse entry to any student who is not in possession of such equipment, 
+					material and literature, commences with the course. 
+					5.4 SIPS have a library of reference books which are available at the sole discretion of SIPS. 
+					5.5 Students take sole responsibility for any damage and or loss to any equipment, material or 
+					literature which belongs to SIPS, should any such damage and or loss occur whilst the 
+					student was in possession, or if the student was suppose to be in possession of such 
+					equipment, material or literature. 
+					5.6 SIPS shall not purchase any equipment which any student purchased during the duration of any 
+					course from any student. SIPS shall be prepared to sell such equipment on the student’s 
+					behalf to other students at a commission of 25% (twenty five percent). SIPS shall not take 
+					any responsibility for such equipment whilst it is in its possession and the student and or 
+					Guardian leaves such equipment in SIPS’ possession at his or her own risk. 
+					6 EXAMS 
+					6.1 Successful completion of SIPS’ courses is subject to the successful completion of the 
+					following: 
+					6.1.1 A continuous evaluation during the duration of the course, which continuous evaluation 
+					amounts to 50% (fifty percent) of the student’s total semester mark; 
+					6.1.2 A practical examination, which will make up 30% (thirty percent) of the student’s total semester 
+					mark; 
+					6.1.3 A written examination, which will make up 20% (twenty percent) of the student’s total semester 
+					mark. 
+					6.2 To be successful in any of the continuous assessments, the practical and written examinations, 
+					a student must achieve a mark of no less than 50% (fifty percent) in respect of each individual 
+					subject. 
+					<br/>
+					8 
+					6.4 SIPS reserve the right to determine the format, content and extent of the continuous 
+					assessment, practical and written examinations. 
+					6.5 Additional examination fees shall be payable in respect of any re-examinations or re-evaluation 
+					of tasks, in the event that such examination fees have been paid in full. 
+					7 RULES AND REGULATIONS OF SIPS
+					7.1 The student admits that he is familiar with and understands the rules and regulations of SIPS 
+					(“Code of Conduct”) and regulations pertaining to examinations and he or she undertakes to 
+					abide by the said rules and regulations, which may be amended by SIPS from time to time in its 
+					sole discretion. 
+					7.2 Should the student fail to adhere to any of the rules and regulations referred to above, SIPS 
+					shall have the right inter alia, do the following: 
+					7.2.1 Issue a verbal or written warning against the student; 
+					7.2.2 Inform the student’s guardian about the transgression; 
+					7.2.3 Summarily suspend the student. In cases where a student’s studies have been summarily 
+					be suspended, the student shall have no claim against SIPS regarding a refund of any 
+					monies paid for the course and or other material, including any rent. The parties hereby 
+					agree, that in such circumstances, the student will forfeit any such monies paid to SIPS as 
+					compensation which SIPS may suffer. 
+					8 SUBJECT CHOICE
+					8.4 Sips course consist of two semesters. In the first semester, the student must follow one 
+					compulsory subject, namely Photography, as set out in Annexure B attached hereto. The 
+					student shall have the right to, over and above the prescribed subjects, to take additional 
+					complementary subjects, up to a maximum of four (4) subjects.
+					<br/>
+					9 
+					8.5 In the second semester, the student shall have the choice to take one or two additional 
+					specialised subjects together with Photography as set out in Annexure B attached hereto. 
+					8.6 The student shall be required to elect the additional subjects at the conclusion of this 
+					agreement. Notwithstanding the election made, the student shall not have the right to insist 
+					that a certain specialised subject be presented if such a specialised subject is not being 
+					presented for whatsoever reason and the student shall not have the right to cancel this 
+					agreement or to insist on the amendment of this agreement. 
+					8.7 The presenting of any specialised subjects in the second semester shall be in the sole 
+					discretion of SIPS. The non presenting of a specialised subject shall not give the student 
+					the right to cancel this agreement. In considering whether or not to present a certain 
+					specialised subject, SIPS shall consider the number of students who elected to do the said 
+					specialised subject. It there are insufficient interest, the specialised subject will not be 
+					presented. 
+					9 PRACTICAL WORK EXPERIENCE
+					9.1 The student will be exposed to a number of practical photo experiences during the duration of 
+					the course. 
+					9.2 Should the student, during the duration of his or her course with SIPS, be contracted to carry out 
+					any work or to work on any project which directly or indirectly relate to the any courses 
+					presented by SIPS, then SIPS shall be entitled to twenty five percent (25%) of the net 
+					remuneration or compensation which the student may receive. 
+					10 Landscape-, underwater-, and/or documentary tour overseas
+					10.1 SIPS intends undertaking an overseas trip should there be sufficient interest amongst the 
+					students . Although the tour shall take place under the SIPS, it shall not form part of any of 
+					SIPS’ courses and the contents thereof shall be contracted in a separate contract. The student 
+					however is expected to indicate at the conclusion of this agreement, whether or not he or she 
+					would be interested in such an overseas trip. 
+					<br/>
+					10 
+					11.
+					11.1 The content of and copyright of any material, project, creation, photo or video that is made on 
+					instruction and co-operation of Charl Best or Starlight Studios CC. or Stellenbosch/Cape Town 
+					Institute of Photographic and Multimedia Studies, remain the property of Charl Best and the 
+					student will not be allowed under any circumstances to use any of it for any other use other than 
+					for the course. 
+					11.2 The student will under no circumstances be allowed to copy or reproduce any of the above 
+					mentioned material or allow it to be copied or reproduced. 
+					12 ACCOMMODATION
+					12.1 SIPS do not provide accommodation (limited), but student who may be interested in acquiring 
+					accommodation, may indicate same on the application form and students will be assisted by 
+					Charl Best to acquire accommodation. The student will however be required to enter into a 
+					separate rent agreement which shall have no bearance on the contractual relationship between 
+					SIPS and the student. 
+					13 PAYMENTS
+					13.1 A deposit of R 5 000.00 (four thousand rand) is payable on the date of application and 
+					must accompany this application and registration form as stipulated in par 13.2. This deposit is 
+					under no circumstances refundable. If the student does not continue with this application or with 
+					any SIPS course for any reason whatsoever, the deposit will not be refunded. 
+					13.2 The deposit can be paid in any of the following manner: 
+					13.2.1 By way of a properly filled in cheque which is not post dated and should be made out to 
+					Stellenbosch Institute of Photographic and Multimedia Studies CC. The cheque must be 
+					crossed and must be marked “non transferable”. 
+					13.2.2 Direct deposit or electronic transfer. In this case there must be a proof of payment 
+					accompanying the application form. SIPS’ back details are as follows: Bank nr. 01-03672-
+					102-9, branch nr. 632005, ABSA Bank, Stellenbosch, and the account name is SIPS. 
+					13.2.3 SIPS does not accept any risk for the method of payment, and until payment is properly 
+					done, SIPS can refuse to process any application form.
+					<br/>
+					11 
+					13.2.4 Any payment made by a student or on behalf of the student, excluding the deposit, will only 
+					be refundable if the student is notified in writing that his application was not successful. 
+					SIPS will not be liable to pay interest on any deposit made. 
+					13.3 If the student’s application is successful, then any deposit or other payments made to SIPS 
+					will first be utilised towards administrative, advertising and similar costs and the balance 
+					thereof shall be utilised towards the SIPS course fees and related costs. 
+					13.4 Send the registration form per registered post to the postal address with the cheque included in 
+					respect of the deposit or fax to 086 672 7507 with the bank deposit slip. SIPS baking details are 
+					set out in clause 13.2.2 above. 
+					13.5 The course fees set out in Annexure B is payable by way of post dated cheques as set out in 
+					Annexure B and must accompany this application and registration form. Course fees are based 
+					on the expenses connected with the presenting of the different courses, regardless of the fact 
+					that SIPS only accepts 30 students per year. If a student decides not to continue with the 
+					course at any time, the student will still be held responsible for the payment of the full course 
+					fees as well as the material costs. 
+					TRANSPORT 
+					Transport to and from all practical sessions will be supplied by SIPS at own risk. Practical 
+					workshops on Fridays are also included. It may be required from students in their second year 
+					to provide their own transport for work purposes and to attend workshops. 
+					14 DOMCILIUM AND NOTICES
+					14.1 The student and guardian hereby choose as Domcilium citandi et executandi (“Domicilium”) for 
+					all purposes the address as stipulated in clauses 1.3 for Student and par. 1.4 for the guardian 
+					respectively. 
+					<br/>
+					12 
+					14.2 No change of the Domicilium by the student or guardian will be valid or binding, except if the 
+					change is in writing and is sent to SIPS via registered post. 
+					14.3 Any notice which is delivered by hand or registered post to the student or the guardian to their 
+					respective domicilium, will be considered to be received, in the case of hand delivery, on the 
+					date of delivery, and in the case of registered post, on the third day after the notification was 
+					posted. 
+					JURISDICTION AND COSTS 
+					14.4 The student and the guardian agree to fall under the jurisdiction of the magistrate’s court that 
+					has jurisdiction over his person, regardless of what the amount is. If SIPS decide to take the 
+					matter further into the High Court, then SIPS will not be limited to the recoup on the cost of 
+					magistrate’s court scales. 
+					14.5 If SIPS sees it fit to take further action to receive the fees as stipulated in this contract, then 
+					SIPS will be able to claim the cost for attorneys and legal fees from the student or guardian. 
+					15 ENTIRETY OF THE AGREEMENT AND ALTERATIONS
+					15.1 This document, including annexure A, B, C and D, contains the whole of the agreement 
+					between the parties and the parties confirm that no other suggestions, other than what is in this 
+					document, was made by SIPS or any other representative from SIPS. 
+					15.2 The annexure of this document was completed fully before the signing of the document. 
+					15.3 No changes, cancellations or notations of this agreement will be valid or binding, except if said 
+					changes, cancellations or notations are in writing and are signed by both parties. 
+					17.4 No slacking on the part of SIPS of any of these stipulations of this agreement will lead to the 
+					 diminishing of the rights that SIPS reserve to apply. 
+					LIABILITY
+					15.4 The student and/or guardian hereby relieve SIPS, CTIPS. and/or Charl Best and/or Starlight 
+					Studios cc. or any employee of SIPS and/or Charl Best and/or Starlight Studios cc. from all.
+					<br/>
+					13 
+					liability for any damage that the student and/or guardian might experience as a result of any 
+					actions of SIPS and/or Charl Best and/or Starlight Studios cc. or any employee of SIPS 
+					and/or Charl Best and/or Starlight Studios cc. during any courses. 
+					15.5 In particular, without diminishing par. 18.1, the student herby relieves SIPS, CTIPS. and/or 
+					Charl Best and/or Starlight Studios cc. or any employee of SIPS and/or Charl Best and/or 
+					Starlight Studios cc. from all liability as a result of any loss or damage to equipment, 
+					material or literature belonging to the student. 
+					Hereby assisted, as needed, while the student is not yet the age of twenty one years old. 
+					I, (parent/guardian) The undersigned 
+					Hereby declare that I join myself totally and separately with the student as co-debtor to the 
+					liability for fees that above mentioned student might owe at any time during the contract to the 
+					Stellenbosch Institute for Photographic and Multimedia Studies cc. or Charl Best with notice of 
+					any changes thereof. 
+					DATED in ___________________ this DAY of 20_______ 
+					Signature of parent/guardian: __________________________ 
+					Witness (1): _____________________Witness (2): _______________________ Signature of parent or guardian: ____________________ 
+					Signature of student: _____________________________ 
+					14 
+					ANNEXURE A
+					Personal Information
+					Full names 
+					Surname 
+					Home tell no. Dialling code 
+					Number 
+					Home fax no. Dialling code 
+					Number 
+					Cell phone no. 
+					E-mail 
+					Home address 
+					Code 
+					Postal address 
+					(if not same as 
+					top) 
+					Code 
+					Person responsible for Course fees 
+					Title Initials 
+					Surname 
+					Employer 
+					Work tell no. Dialling code 
+					Number 
+					Work fax no. Dialling code 
+					Number 
+					Cell phone no. 
+					E-mail 
+					Postal address Signature of parent or guardian: ____________________ 
+					Signature of student: _____________________________ 
+					15 
+					Please mark Yes No 
+					You are a South African citizen 
+					You are a foreigner with a permanent stay permit 
+					You are a foreigner with a temporary stay permit 
+					Permit number Expiry date 
+					A certified copy of the staying - or study permit has to accompany the application. 
+					No student will be allowed without a valid studying permit. 
+					How did you about SIPS? Who referred you or told you about the course? 
+					Previous studies 
+					Highest grade passed Gr. 11 Gr. 12 
+					Additional work experience during high school career 
+					Name of school attended 
+					Sport Activities
+					Name two sport activities would you like to participate in while at Stellenbosch? 
+					Sport 1. 2. 
+					Medical Information 
+					What is your medical condition? 
+					Do you need any medical care? Specify Signature of parent or guardian: ____________________ 
+					Signature of student: _____________________________ 
+					16 
+					Annexure B
+					Subjects 
+					Please note that the CTIPS. course is a one year course and the difference between first and 
+					second semester is purely for organisational purposes. 
+					Sips/CTIPS. First semester optional subjects 
+					First Semester – 4 February 2014 to 12 June 2014 
+					1. Photography (compulsory) Internet Marketing – 2 year 
+					2. Visual communication Scuba diving course 
+					3 Studio Lighting Thailand tour 
+					4. Photo-/Tv.Make-up Seychelles tour 
+					5. Video production Darkroom technique 
+					6. TV. Presenting Interior Design – 2 year 
+					7. Graphic design Fashion Design – 2 year 
+					8 Animation – 2 year Event Management - 2 year 
+					Course fee: R 44 000.00 plus materials. For Photography First and Second semester. 
+					Sales/Marketing Module in Second semester INCLUDED. 
+					Additional, complimentary subjects above in the First semester are extra. See page 20 and 21 
+					and complete there. 
+					Sips/CTIPS. Second semester optional subjects. 
+					Second Semester - 21 July 2014 to 13 November 2014 
+					1. Advanced Video production. 
+					2. Graphic Computers – Advanced Photoshop- Coreldraw & Web design 
+					Sales and Marketing module included with Photography in the Second semester.at no cost. 
+					Materials and Orientation Camp:
+					The orientation camp helps the students to meet each other before the classes commences and will be taking 
+					place on the 5 and 6 February 2013. 
+					You must be at SIPS., on the 4 February 2014 at 8.00 in Stellenbosch both Cape Town and the Stellenbosch 
+					students. 
+					Items you will need for the camp: Signature of parent or guardian: ____________________ 
+					Signature of student: _____________________________ 
+					17 
+					A Sleeping bag and pillow, tabard, sun block, swimsuit, sandals or tekkies that can get wet and a towel and other 
+					personal stuff. Transport and food will be provided. You must have your swimsuit on underneath your clothes the 
+					first day of the camp. 
+					The course officially starts on Friday the 7 February 2014 at 9:00. Only a pen and note book. 
+					ANNEXURE C:
+					Materials necessary for subjects 
+					Compulsory materials that are needed for the photography subject in the first semester, which 
+					includes text books, transport, model fees, group photo exhibition, enlargements and 
+					orientation camps etc. Other materials needed for these subjects like films, chemicals; video’s 
+					and art is part of the optional subjects and must be purchased yourself. 
+					Photography
+					Equipment: 
+					1. SLR. (Single lens reflex) digital. Camera with +- 18-80 or 55-80 mm. lens. 
+					 Additional a 80-300mm. zoom lenses will come in handy. 
+					 It is important that your camera can do full manual exposure too.. 
+					2. For the black and white photography- darkroom work you still need a SLR film 
+					 camera. 
+					3. External flash, eg. Nikon speedlight SB 900, handy, but not a must. 
+					4. Laptop with a powerful i5 or i7 processor and at least 4 gbyte ram, is compulsory. 
+					5. Tripod. 
+					6. Hotshoe. To connect your camera to studio flash equipment if you take studio lighting 
+					Photography Optional Materials: (Optional – if you choose darkroom as extra subject.) 
+					Black and white Darkroom
+					1 Ilford Multigrade 127 x 178 mm. (100 paper) (no glossy paper for black and white 
+					 photography)
+					6 36 exp.Ilford FP4 Films, 100 iso.
+					1 litre Ilford Multigrade paper developer for black and white photography (or B/W 
+					 multicontrast developer 
+					1 litre Ilford film and paper fixer 
+					2 Ilford Perceptol, .ID 11 or universal film developer for black and white photography 
+					1 small bottle of sunlight liquid 
+					10 plastic bags for negs A4 – for 6 negs in a row. Signature of parent or guardian: ____________________ 
+					Signature of student: _____________________________ 
+					18 
+					Video production
+					Compulsory: Digital Video camera: any type but DV. Or digital tapes. Optional external 
+					microphone jack in video camera. 
+					Video tripod or you can also use your camera tripod. Detailed list of names will be provided in 
+					November. 
+					Graphic Design
+					No materials. We supply notes, but you must have your own laptop. 
+					MAKE-UP MATERIALS FOR 2014: 
+					We will supply a list of make-up materials and stockists in November and you 
+					must order and pay direct. Cost, about R 4 500. 
+					All other subjects. List to be supplied in November of preceding year. 
+					Compulsory materials 
+					First semester 
+					1. Required Photography materials 
+					Textbook: by Charl Best R 500.00 
+					Transport R 1 400.00 
+					Models and styling fees R 950.00 
+					Studio use, extra notes R 380.00 
+					Entrances fees R 200.00 
+					Semester exhibition. snacks and wine, (2 guests) R 300.00 
+					Two black mounting board (40x50cm) for exhibition R 150.00 
+					A. Total: R 3 880.00 
+					Compulsory camps and orientation: 
+					Two day orientation and get to know each other workshop: 
+					Rowing, paintball, accommodation, meals and transport to R 1 700.00 
+					Bonnievale river camp- one night accommodation, meals (3x) 
+					West coast-mikonos landscape and teambuilding camp. R 1 200.00 
+					B.Total: R 2 900.00 
+					A+B ` R 6 780.00Signature of parent or guardian: ____________________ 
+					Signature of student: _____________________________ 
+					19 
+					Second Semester 
+					Compulsory Materials needed for Photography 
+					FAQ. Handbook and notes. R 300.00 
+					Entrance fee – World of Birds and Aquarium R 450.00 
+					Transport R 1 600.00 
+					Model fees – Make-up and wedding dress hiring and styling. R 1 600.00 
+					Year end function – dinner and certificates for student and 
+					Two parents @ R500 each R 1 500.00 
+					Landscape Tour (accommodation x 1 night, meals x2, transport) R 1 200.00
+					TOTAL R 6 650.00Signature of parent or guardian: ____________________ 
+					Signature of student: _____________________________ 
+					20 
+					Subject Payments and Dates.
+					1. Deposit now payable and deducted R 5 000.00
+					2. Course fee balance for Photography for the year is R 39 000.00 
+					3. Late registration- Later than1 August 2014 R 800.00 
+					3. Additional Subjects: (optional)
+					First Semester
+					Studio lighting R 2 500.00 
+					Visual Communication R 2 500.00 
+					Darkroom technique R 2 500.00 
+					Video Production R 7 000.00 
+					TV presenting (module in video production) R 4 000.00 
+					Graphic design R 7 000.00 
+					Photo and TV make-up R 7 000.00
+					Total: Payable – 1 Feb. 2014) R ____________ 
+					Our postal address is: 
+					SIPS/CTIPS Registration 2013, 9 Hof ave., Uniepark, Stellenbosch, 7600
+					Second Semester
+					Additional Subjects: (optional) 
+					Graphic Computers: (Advanced Photoshop, CorelDraw and Web design) R 10 500.00 
+					Video production advanced R 12 000.00 
+					Total: Payable – 1 June. 2014) R ____________ 
+					Banking details: Sips., Absa, Stellenbosch, 01036721029 
+					Send proof to: bestsips@iafrica.com 
+					Vat. nr. 4040187298 
+					Attached post dated cheques for 1 Feb. 2014, (Course fees) and 1 June 2014 (Course feeextra subjects) or EFT., payment activation slip at time of registration. 
+				</div>
+				<label>Agree to the terms and conditions:
+					<input type="checkbox" required="required"/>
+				</label>
+				<label>Current Date
+					<input type="date" name="date" id="date" placeholder="dd/mm/yyyy" required="required"/>
+				</label>
+				<label>
+				<p>
+					<input type="submit" value="Submit my application"/>
+					<input type="reset" value="Reset my application"/>
+				</p>
+				</label>
+				</fieldset>
+		</form>
+	</body>
+</html>
